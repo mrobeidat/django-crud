@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:#FCF0C8
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #0a25bf;
+
+      }
+      
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .topnav a:hover {
+        background-color: #127aaa;
+        color: #FCF0C8;
+      }
+      
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #0a25bf;
+        color: #ebdfc9;
+        text-align: center;
+     }
+        </style>
+        <link rel="stylesheet" href="styles.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks-Crud-App</title>
+</head>
+<body>
+    <header class="topnav">
+        <div style="text-align: center">
+            <a  href="{% url 'snacks' %}">Home</a>
+            <a href="{% url 'create-snack' %}">Create a Snack</a>
+        </div>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+    <div class="footer">
+        <p>&COPY; Yousef Obeidat</p>
+    </div>
+</body>
+</html>

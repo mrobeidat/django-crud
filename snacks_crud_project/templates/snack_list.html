@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content%}
+<h2 style="color:whitesmoke;background-color:purple;width:fit-content;margin-left: 43%;"> snacks list </h2>
+<fieldset style="width:35%; margin-left: 29%;background-image: url(https://t4.ftcdn.net/jpg/02/62/27/45/360_F_262274583_fbVsQxJVRYLgkaQHrRoxNKpMdDYmhLJD.jpg);">
+    <p style="color:whitesmoke"> click on the snack to see it's details.</p>
+    <ul>
+        {% for snack in object_list%}
+        <a href="{{snack.get_absolute_url }}">
+        <li style="color:whitesmoke;
+        padding: 10px; width:fit-content"> {{ snack.title }}</li>
+        </a>
+        {% endfor%}
+
+    </ul>
+
+    {% endblock %}
+    <fieldset>
