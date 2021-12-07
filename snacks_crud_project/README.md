@@ -1,0 +1,1 @@
+My Work : https://github.com/mrobeidat/django-crud/tree/main/snacks_crud_project
